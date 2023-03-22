@@ -6,6 +6,7 @@ const MoviesContext = createContext();
 
 export const MoviesDataContext = ({ children }) => {
   const locationH = useLocation();
+
   const [loading, setLoading] = useState(true);
 
   const [trendMovies, setTrendMovies] = useState([]);
@@ -45,13 +46,16 @@ export const MoviesDataContext = ({ children }) => {
   function inifinityScroll() {
     const innerHeight = window.innerHeight;
     const { scrollTop, scrollHeight } = document.documentElement;
-    if (innerHeight + scrollTop + 1 >= scrollHeight) {
-      setPage((prev) => prev + 1);
+    if (location.pathname !== "/") {
+      if (innerHeight + scrollTop + 1 >= scrollHeight) {
+        setPage((prev) => prev + 1);
+      }
     }
   }
 
   async function getTrendMovies() {
     try {
+      // console.log("trend", locationH.pathname);
       setLoading(true);
       const { data, status } = await api("trending/movie/day", {
         params: { language: `${lang}`, page: page },

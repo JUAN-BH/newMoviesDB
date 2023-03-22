@@ -71,7 +71,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btnRight {
-    color: white;
+    color: $secondaryColor;
     position: absolute;
     right: 10px;
     cursor: pointer;
@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btnLeft {
-    color: white;
+    color: $secondaryColor;
     position: absolute;
     left: 10px;
     cursor: pointer;

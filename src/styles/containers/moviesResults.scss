@@ -5,12 +5,22 @@
     gap: 19px;
     max-width: 115rem;
     margin: auto 0;
+
+    .movieItem {
+        max-width: 158px;
+        max-height: 240px;
+    }
 }
 
 @include media-up(lg) {
     .moviesResults {
-        gap: 10px;
+        gap: 0px;
         justify-content: inherit;
+
+        .movieItem {
+            max-width: 180px;
+            max-height: 264px;
+        }
     }
 
 }

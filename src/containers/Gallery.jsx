@@ -64,9 +64,11 @@ export const Gallery = ({ children }) => {
   };
   return (
     <Carousel
+      className="carrousel"
       responsive={responsive}
       // infinite={true}
       // slidesToSlide={2}
+      // centerMode={false}
       customTransition="all 1s ease"
       customRightArrow={<CustomRightArrow />}
       customLeftArrow={<CustomLeftArrow />}

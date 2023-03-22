@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { LayoutHeader } from "./containers/LayoutHeader";
 import { ActorDataProvider } from "./contexts/ActorsDataContexts";
 import { MoviesDataContext } from "./contexts/MoviesDataContext";
@@ -14,7 +14,7 @@ import { UpComingMoviesPage } from "./pages/UpComingMoviesPage";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <MoviesDataContext>
         <ActorDataProvider>
           <ThemeContextProvider>
@@ -75,7 +75,7 @@ function App() {
           </ThemeContextProvider>
         </ActorDataProvider>
       </MoviesDataContext>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

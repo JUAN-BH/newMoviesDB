@@ -1,15 +1,18 @@
 .movieItem {
     position: relative;
-    max-width: 158px;
-    max-height: 240px;
+    max-width: 180px;
+    max-height: 264px;
 
     padding: 4px;
+    border-radius: 12px;
+
     overflow: hidden;
+    // background-color: red;
 
     &__info {
         position: absolute;
         width: 96%;
-        height: 98%;
+        height: 95%;
 
         padding: 4px;
         border-radius: 12px;
@@ -53,7 +56,7 @@
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        // object-fit: contain;
         border-radius: 12px;
     }
 }
@@ -65,10 +68,9 @@
 
 @include media-up(lg) {
     .movieItem {
-        max-width: 180px;
-        max-height: 264px;
-
         .movieItem__info {
+            height: 98%;
+
             display: flex;
             flex-direction: column;
             align-items: center;
