@@ -37,25 +37,29 @@ export const Gallery = ({ children }) => {
       slidesToSlide: 6, // optional, default to 1.
     },
     laptop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 1024, min: 768 },
+      breakpoint: { max: 1024, min: 825 },
       items: 5,
       slidesToSlide: 5,
     },
     tablet: {
-      breakpoint: { max: 768, min: 430 },
+      breakpoint: { max: 825, min: 585 },
       items: 4,
       slidesToSlide: 4,
     },
     mobile: {
-      breakpoint: { max: 430, min: 320 },
+      breakpoint: { max: 585, min: 450 },
       items: 3,
       slidesToSlide: 3,
     },
     smallMobile: {
-      breakpoint: { max: 320, min: 0 },
+      breakpoint: { max: 450, min: 280 },
       items: 2,
       slidesToSlide: 2,
+    },
+    verySmallMobile: {
+      breakpoint: { max: 280, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
     },
   };
   return (

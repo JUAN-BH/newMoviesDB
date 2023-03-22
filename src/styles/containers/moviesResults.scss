@@ -1,6 +1,16 @@
 .moviesResults {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 19px;
     max-width: 115rem;
     margin: auto 0;
+}
+
+@include media-up(lg) {
+    .moviesResults {
+        gap: 10px;
+        justify-content: inherit;
+    }
+
 }

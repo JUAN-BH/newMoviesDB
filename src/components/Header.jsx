@@ -6,7 +6,6 @@ import { Squash as Hamburger } from "hamburger-react";
 import { MenuMobile } from "../containers/MenuMobile";
 
 export const Header = () => {
-  // const [isOpen, setOpen] = useState(false);
   const menuMobile = useRef(null);
   const navigate = useNavigate();
 

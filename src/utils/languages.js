@@ -5,7 +5,7 @@ export const langs = {
       up: "Próximamente",
       tre: "Tendencias",
       top: "Mejores calificaciones",
-      see: "Ver mas",
+      see: "Ver más",
     },
     moviePage: {
       du: "Duracion",
@@ -28,10 +28,10 @@ export const langs = {
     },
     actorItem: {
       as: "Como",
-      see: "Ver mas",
+      see: "Ver más",
     },
     movieItem: {
-      see: "Ver mas",
+      see: "Ver más",
     },
   },
 };

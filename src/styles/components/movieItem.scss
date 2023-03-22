@@ -1,17 +1,16 @@
 .movieItem {
     position: relative;
-    width: 146px;
-    height: 200px;
-    padding: 10px;
-    overflow: hidden;
+    max-width: 158px;
+    max-height: 240px;
 
+    padding: 4px;
+    overflow: hidden;
 
     &__info {
         position: absolute;
-        top: calc(50% - 90px);
-        left: calc(50% - 63px);
-        height: 180px;
-        width: 126px;
+        width: 96%;
+        height: 98%;
+
         padding: 4px;
         border-radius: 12px;
         background-color: rgba(0, 0, 0, 0.541);
@@ -49,8 +48,6 @@
                 color: $primaryColor;
             }
         }
-
-
     }
 
     img {
@@ -61,33 +58,25 @@
     }
 }
 
-
-
 .movieItem:hover .movieItem__info {
     transform: scale(1);
     opacity: 1;
 }
 
-
 @include media-up(lg) {
     .movieItem {
-        width: 180px;
-        height: 264px;
+        max-width: 180px;
+        max-height: 264px;
 
         .movieItem__info {
-            top: calc(50% - 122px);
-            left: calc(50% - 80px);
-            height: 244px;
-            width: 160px;
-
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
 
+
+
             font-size: 1.6rem;
-            color: white;
-            cursor: pointer;
 
             &__title {
                 font-size: 1.8rem;
@@ -99,7 +88,5 @@
         }
 
     }
-
-
 
 }
