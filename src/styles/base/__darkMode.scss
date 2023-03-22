@@ -1,0 +1,23 @@
+.dark {
+    background-color: $backDark;
+    color: $TextDark;
+
+    .categoryBtn {
+        color: $blackText;
+    }
+
+    .categoryBtn:hover {
+        color: $TextDark;
+    }
+
+    .searchMovieForm__input {
+        background-color: $backDark;
+        color: $whiteText;
+
+    }
+
+    .menuMobile__content {
+        background-color: $backDark;
+    }
+
+}

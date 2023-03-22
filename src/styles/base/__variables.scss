@@ -1,0 +1,19 @@
+$shadowColor: rgb(30 30 30);
+$whiteText: #fff;
+$blackText: #000;
+//lisght
+$background-color: white;
+$colorText: #000;
+$primaryColor: #33a9fe;
+$secondaryColor: #0072c4;
+//dark
+$backDark: rgb(30 30 30);
+$TextDark: #fff;
+
+$breakPoints: (ls: 425px, lg: 768px, xl: 1544px);
+
+@mixin media-up($breakPoint) {
+    @media screen and (min-width: map-get($breakPoints, $breakPoint)) {
+        @content;
+    }
+}

@@ -1,0 +1,17 @@
+@import './base/_variables';
+@import './base/_animaciones';
+@import './base/_globales.scss';
+@import './base/_darkMode';
+@import './containers/moviesDisplay.scss';
+@import './containers/categoriesDisplay.scss';
+@import './containers/movieInfo.scss';
+@import './containers/movieExtraInfo.scss';
+@import './containers/moviesResults.scss';
+@import './containers/menuMobile.scss';
+@import './components/header.scss';
+@import './components/searchMovieInput.scss';
+@import './components/categoryItem.scss';
+@import './components/movieItem.scss';
+@import './components/actorInfo.scss';
+@import './components/buttonBack.scss';
+@import './components/loader.scss';

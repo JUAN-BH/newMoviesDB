@@ -1,0 +1,83 @@
+.actorMovies {
+    max-width: 115rem;
+    margin: 0 auto;
+}
+
+.actorInfo {
+    max-width: 115rem;
+    margin: 0 auto;
+
+    svg {
+        color: $primaryColor;
+    }
+
+    .controlsMoviePage {
+        max-width: 115rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-inline: 12px;
+        color: $primaryColor;
+    }
+
+    &__image {
+        width: 100%;
+        height: 500px;
+    }
+
+    &__data {
+        padding: 12px;
+
+        &__name {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            h1 {
+                color: $primaryColor;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+
+// @include media-up(ls) {
+//     .actorInfo {
+//         &__image {
+//             width: 100%;
+//             height: 800px;
+//         }
+
+//         &__data {
+//             padding: 12px;
+//             font-size: 1.4rem;
+
+//             &__name {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: space-between;
+//                 width: 100%;
+
+//                 h2 {
+//                     font-size: 2.8rem;
+//                     color: $primaryColor;
+//                 }
+
+//                 div {
+//                     display: flex;
+//                     align-items: center;
+//                 }
+//             }
+//         }
+//     }
+// }

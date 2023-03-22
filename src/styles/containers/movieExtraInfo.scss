@@ -1,0 +1,42 @@
+.movieExtraInfo {
+    max-width: 115rem;
+    padding: 12px;
+    margin: 0 auto;
+
+    // h2 {
+    //     font-size: 2.4rem;
+    // }
+
+    &__trailerCon {
+        width: 100%;
+        margin: 20px 0;
+
+        &__trailer {
+            width: 100%;
+        }
+
+    }
+
+}
+
+@include media-up(ls) {
+    .movieExtraInfo {
+        &__trailerCon {
+            &__trailer {
+                height: 300px;
+            }
+
+        }
+    }
+}
+
+@include media-up(lg) {
+    .movieExtraInfo {
+        &__trailerCon {
+            &__trailer {
+                height: 500px;
+            }
+
+        }
+    }
+}

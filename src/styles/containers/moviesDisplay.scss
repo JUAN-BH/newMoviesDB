@@ -1,0 +1,23 @@
+// @import "../base/_globales";
+
+.moviesDisplay {
+    width: 100%;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-inline: 10px;
+
+        h3 {
+            display: inline-block;
+            color: $primaryColor;
+            text-decoration: underline;
+        }
+    }
+}
+
+.trends {
+    margin: 20px 0;
+}

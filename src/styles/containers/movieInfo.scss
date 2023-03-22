@@ -1,0 +1,99 @@
+.movieInfo {
+    position: relative;
+
+    svg {
+        color: $primaryColor;
+    }
+
+    &__posterMovie {
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .controlsMoviePage {
+        max-width: 115rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-inline: 12px;
+    }
+
+    &__data {
+        padding: 12px;
+        max-width: 115rem;
+        margin: 0 auto;
+
+        &__mainInfo {
+            margin-bottom: 12px;
+
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 100%;
+
+                h2 {
+                    color: $primaryColor;
+                }
+
+                div {
+                    display: flex;
+                    align-content: center;
+                }
+
+                p {
+                    display: flex;
+                    align-content: center;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &__categories {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+
+            margin-bottom: 12px;
+
+            p {
+                color: $whiteText;
+                padding: 4px;
+                font-weight: bold;
+                border-radius: 8px;
+                background-color: $secondaryColor;
+            }
+        }
+    }
+
+
+}
+
+@include media-up(ls) {
+    .movieInfo {
+        &__posterMovie {
+            height: 400px;
+        }
+    }
+}
+
+@include media-up(lg) {
+    .movieInfo {
+        &__posterMovie {
+            height: 650px;
+        }
+    }
+}
+
+@include media-up(xl) {
+    .movieInfo {
+        &__posterMovie {
+            height: 850px;
+        }
+    }
+}

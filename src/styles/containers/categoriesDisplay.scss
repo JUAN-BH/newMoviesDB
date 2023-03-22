@@ -1,0 +1,11 @@
+.categories {
+    margin: 20px 0px;
+    padding-inline: 10px;
+
+    &__items {
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}

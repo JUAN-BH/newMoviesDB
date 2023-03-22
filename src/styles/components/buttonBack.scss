@@ -1,0 +1,33 @@
+.buttonBack {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 5;
+    width: 55px;
+    height: 45px;
+
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: $primaryColor;
+    box-shadow: 0px 1px 5px 2px $shadowColor;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+        margin-right: 4px;
+    }
+}
+
+.buttonBack:hover {
+    color: $primaryColor;
+    background-color: transparent;
+    border: 1px solid $primaryColor;
+}
+
+@include media-up(ls) {
+    .buttonBack {
+        top: 20px;
+        left: 20px;
+    }
+}
