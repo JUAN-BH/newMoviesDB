@@ -5,6 +5,8 @@ import { api } from "../utils/api";
 const MoviesContext = createContext();
 
 export const MoviesDataContext = ({ children }) => {
+  console.log(import.meta.env.VITE_API_KEY);
+
   const locationH = useLocation();
   const [loading, setLoading] = useState(true);
 
