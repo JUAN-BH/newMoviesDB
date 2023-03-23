@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "../components/Footer";
 import { Loading } from "../components/Loading";
 import { SearchMovieInput } from "../components/SearchMovieInput";
 import { Categories } from "../containers/Categories";
@@ -13,12 +14,12 @@ export const HomePage = () => {
   return (
     <div>
       {loading && <Loading />}
-      {/* <Loading /> */}
       <SearchMovieInput />
       <Categories />
       <UpComing />
       <Trends />
       <TopRated />
+      <Footer />
     </div>
   );
 };

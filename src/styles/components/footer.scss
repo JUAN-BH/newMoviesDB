@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 115rem;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+
+        a:nth-child(2) {
+            margin-inline: 10px;
+            border-radius: 8px;
+        }
+
+        path {
+            fill: $secondaryColor;
+            transition: all 0.4s;
+        }
+
+        svg:hover {
+            transform: scale(1.2);
+        }
+
+        svg:hover path {
+            fill: $primaryColor;
+        }
+
+    }
+}

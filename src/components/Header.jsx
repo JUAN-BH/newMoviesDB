@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/logoMovies.png";
+import logo from "../assets/img/logoMovies.png";
 import { Controls } from "./Controls";
 import { Squash as Hamburger } from "hamburger-react";
 import { MenuMobile } from "../containers/MenuMobile";

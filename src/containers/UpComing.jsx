@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Loading } from "../components/Loading";
 import { MovieItem } from "../components/MovieItem";
 import { useMoviesContext } from "../contexts/MoviesDataContext";
 import { langs } from "../utils/languages";
@@ -24,7 +25,7 @@ export const UpComing = () => {
             return <MovieItem movie={m} key={m.id} />;
           })
         ) : (
-          <p>cargando</p>
+          <Loading />
         )}
       </Gallery>
     </section>

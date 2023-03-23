@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { BackButton } from "../components/BackButton";
+import { Footer } from "../components/Footer";
 import { MovieExtraInfo } from "../containers/MovieExtraInfo";
 import { MovieInfo } from "../containers/MovieInfo";
 import { useMoviesContext } from "../contexts/MoviesDataContext";
@@ -22,6 +23,7 @@ export const MoviePage = () => {
       <BackButton />
       <MovieInfo />
       <MovieExtraInfo />
+      <Footer />
     </div>
   );
 };

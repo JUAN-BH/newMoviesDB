@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Loading } from "../components/Loading";
 import { MovieItem } from "../components/MovieItem";
 import { useMoviesContext } from "../contexts/MoviesDataContext";
 import { langs } from "../utils/languages";
@@ -19,9 +20,13 @@ export const Trends = () => {
         </NavLink>
       </div>
       <Gallery>
-        {trendMovies.map((m) => {
-          return <MovieItem movie={m} key={m.id} />;
-        })}
+        {trendMovies.length > 0 ? (
+          trendMovies.map((m) => {
+            return <MovieItem movie={m} key={m.id} />;
+          })
+        ) : (
+          <Loading />
+        )}
       </Gallery>
     </section>
   );
