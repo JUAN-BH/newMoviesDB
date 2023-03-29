@@ -1,0 +1,12 @@
+.selectLang {
+    padding: 6px;
+    border-radius: 8px;
+    margin-left: 12px;
+    cursor: pointer;
+    border: 1px solid $primaryColor;
+
+}
+
+.selectLang:focus {
+    outline: none;
+}

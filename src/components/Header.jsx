@@ -24,8 +24,6 @@ export const Header = () => {
           size={30}
           rounded
           hideOutline={false}
-          // toggled={isOpen}
-          // toggle={setOpen}
           onToggle={(toggle) => {
             if (toggle) {
               menuMobile.current.style.transform = "translateX(0px)";

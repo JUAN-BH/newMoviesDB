@@ -17,9 +17,15 @@ export const Controls = () => {
       ) : (
         <IconMoonFilled className="controlTheme" onClick={lightMode} />
       )}
-      <select value={lang} name="" id="" onChange={changeLang}>
-        <option value="en">English</option>
-        <option value="es">Spanish</option>
+      <select
+        value={lang}
+        name=""
+        id=""
+        onChange={changeLang}
+        className="selectLang"
+      >
+        <option value="en">{lang == "es" ? "Ingles" : "English"}</option>
+        <option value="es">{lang == "es" ? "Español" : "Spanish"}</option>
       </select>
     </>
   );
