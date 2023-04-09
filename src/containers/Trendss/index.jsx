@@ -1,5 +1,5 @@
 import { useNearScreen } from "../../hooks/useNearScreen";
-import { Trends } from "./trends";
+import { Trends } from "./Trends";
 
 export const LazyTrends = () => {
   const { show, elRef } = useNearScreen();

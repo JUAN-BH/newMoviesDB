@@ -1,5 +1,5 @@
 import { useNearScreen } from "../../hooks/useNearScreen";
-import { TopRated } from "./topRated";
+import { TopRated } from "./TopRated";
 
 export const LazyTopRated = () => {
   const { show, elRef } = useNearScreen();
