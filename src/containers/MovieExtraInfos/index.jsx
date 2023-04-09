@@ -1,5 +1,5 @@
 import React from "react";
-import { LazyCast } from "../Casts/index";
+import { LazyCast } from "../Castss/index";
 import { LazyMovieTrailer } from "../MovieTrailers";
 import { LazyRelatedMovies } from "../RelatedMovies";
 
