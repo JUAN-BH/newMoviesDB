@@ -1,5 +1,5 @@
 import { useNearScreen } from "../../hooks/useNearScreen";
-import { UpComing } from "./UpComing";
+import { UpComing } from "./upComing";
 
 export const LazyUpComing = () => {
   const { show, elRef } = useNearScreen();
