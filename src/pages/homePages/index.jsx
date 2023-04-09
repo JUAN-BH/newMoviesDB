@@ -3,7 +3,7 @@ import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { Categories } from "../../containers/Categories";
 import { LazyTopRated } from "../../containers/TopRateds/Index.jsx";
 import { LazyTrends } from "../../containers/Trendss";
-import { LazyUpComing } from "../../containers/UpComings";
+import { LazyUpComing } from "../../containers/UpComings/Index";
 import { Footer } from "../../components/Footers";
 import { SearchMovieInput } from "../../components/SearchMovieInputs";
 import { InitialLoader } from "../../components/InitalLoaders";
