@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
+import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
+import { useInfiniteMovies } from "../../hooks/useInfiniteMovies";
 import { MoviesResults } from "../../containers/MovieResults";
 import { Loading } from "../../components/Loader";
 import { langs } from "../../utils/languages";
-import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
-import { useInfiniteMovies } from "../../hooks/useInfiniteMovies";
 
 export const CategoriesPage = () => {
   const { state } = useGlobalStateContext();

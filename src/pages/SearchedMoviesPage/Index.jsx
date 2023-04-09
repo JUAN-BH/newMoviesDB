@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
+import { useSearchParams } from "react-router-dom";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { useInfiniteMovies } from "../../hooks/useInfiniteMovies";
-import { useSearchParams } from "react-router-dom";
 import { MoviesResults } from "../../containers/MovieResults";
 import { SearchMovieInput } from "../../components/SearchMovieInput";
-import { langs } from "../../utils/languages";
 import { Loading } from "../../components/Loader";
+import { langs } from "../../utils/languages";
 
 export const SearchedMoviesPage = () => {
   const { state } = useGlobalStateContext();
