@@ -1,4 +1,4 @@
-import { LazyActorMovies } from "../../containers/ActorMovies";
+import { LazyActorMovies } from "../../containers/ActorMovies/Index";
 import { ActorInfo } from "../../components/ActorInfos";
 import { BackButton } from "../../components/BackButtons";
 import { Footer } from "../../components/Footers";
