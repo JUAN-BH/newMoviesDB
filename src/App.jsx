@@ -2,14 +2,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeContextProvider } from "./contexts/ThemeContext";
 import { GlobalStateContextProvider } from "./contexts/GlobalStateContext";
 
-import { HomePage } from "./pages/homePage";
+import { HomePage } from "./pages/homePages";
 import { MoviePage } from "./pages/moviePages";
-import { ActorPage } from "./pages/actorPage";
-import { CategoriesPage } from "./pages/categoriesPage";
-import { SearchedMoviesPage } from "./pages/searchedMoviesPage";
-import { TopRatedMoviesPage } from "./pages/topRatedMoviesPage";
-import { TrendingMoviesPage } from "./pages/trendingMoviesPage";
-import { UpComingMoviesPage } from "./pages/upComingMoviesPage";
+import { ActorPage } from "./pages/actorPages";
+import { CategoriesPage } from "./pages/categoriesPages";
+import { SearchedMoviesPage } from "./pages/searchedMoviesPages";
+import { TopRatedMoviesPage } from "./pages/topRatedMoviesPages";
+import { TrendingMoviesPage } from "./pages/trendingMoviesPages";
+import { UpComingMoviesPage } from "./pages/upComingMoviesPages";
 import { LayoutHeader } from "./containers/LayoutHeader";
 
 function App() {
