@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { MenuMobile } from "../../containers/MenuMobiles";
-import { Controls } from "../Controls";
+import { Controls } from "../Controlss";
 
 import logo from "../../assets/img/logoMovies.png";
 import { Squash as Hamburger } from "hamburger-react";

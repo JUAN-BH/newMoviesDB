@@ -1,7 +1,7 @@
 import React from "react";
 import { useThemeContext } from "../../contexts/ThemeContext";
 import { langs } from "../../utils/languages";
-import { Controls } from "../Controls";
+import { Controls } from "../Controlss";
 
 import { IconStarFilled } from "@tabler/icons-react";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";

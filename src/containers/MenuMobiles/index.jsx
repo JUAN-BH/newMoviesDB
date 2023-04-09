@@ -1,5 +1,5 @@
 import React from "react";
-import { Controls } from "../../components/Controls";
+import { Controls } from "../../components/Controlss";
 
 export const MenuMobile = ({ isOpen, setIsOpen }) => {
   function closeMenuMobile(e) {
