@@ -1,9 +1,9 @@
 import React from "react";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { Categories } from "../../containers/Categories";
-import { LazyTopRated } from "../../containers/TopRateds/index";
-import { LazyTrends } from "../../containers/Trendss/index";
-import { LazyUpComing } from "../../containers/UpComings/index";
+import { LazyTopRated } from "../../containers/TopRateds";
+import { LazyTrends } from "../../containers/Trendss";
+import { LazyUpComing } from "../../containers/UpComings";
 import { Footer } from "../../components/Footers";
 import { SearchMovieInput } from "../../components/SearchMovieInputs";
 import { InitialLoader } from "../../components/InitalLoaders";
