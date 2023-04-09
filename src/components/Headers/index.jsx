@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { MenuMobile } from "../../containers/MenuMobiles";
+import { MenuMobile } from "../../containers/MenuMobiles/Index";
 import { Controls } from "../Controlss";
 
 import logo from "../../assets/img/logoMovies.png";

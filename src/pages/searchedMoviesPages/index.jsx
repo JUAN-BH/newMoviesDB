@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { useInfiniteMovies } from "../../hooks/useInfiniteMovies";
-import { MoviesResults } from "../../containers/MovieResults";
+import { MoviesResults } from "../../containers/MovieResults/Index";
 import { SearchMovieInput } from "../../components/SearchMovieInputs";
 import { Loading } from "../../components/Loadings";
 import { langs } from "../../utils/languages";
