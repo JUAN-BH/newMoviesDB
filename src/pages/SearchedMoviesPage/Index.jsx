@@ -4,7 +4,7 @@ import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { useInfiniteMovies } from "../../hooks/useInfiniteMovies";
 import { MoviesResults } from "../../containers/MovieResults";
 import { SearchMovieInput } from "../../components/SearchMovieInput";
-import { Loading } from "../../components/Loader";
+import { Loading } from "../../components/Loading/Index";
 import { langs } from "../../utils/languages";
 
 export const SearchedMoviesPage = () => {

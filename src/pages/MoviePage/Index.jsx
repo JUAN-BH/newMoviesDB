@@ -3,7 +3,7 @@ import { MovieExtraInfo } from "../../containers/MovieExtraInfo";
 import { MovieInfo } from "../../containers/MovieInfo";
 import { BackButton } from "../../components/BackButton";
 import { Footer } from "../../components/Footer";
-import { Loading } from "../../components/Loader";
+import { Loading } from "../../components/Loading/Index";
 
 export const MoviePage = () => {
   const { state } = useGlobalStateContext();

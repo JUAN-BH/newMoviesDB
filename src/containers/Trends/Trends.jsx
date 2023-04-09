@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { useDisplayMovies } from "../../hooks/useDisplayMovies";
 import { Gallery } from "../Gallery";
-import { Loading } from "../../components/Loader";
+import { Loading } from "../../components/Loading/Index";
 import { MovieItem } from "../../components/MovieItem";
 import { langs } from "../../utils/languages";
 

@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import "react-multi-carousel/lib/styles.css";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
-import { Loading } from "../../components/Loader/Index";
+import { Loading } from "../../components/Loading/Index";
 
 const CustomRightArrow = ({ onClick, ...rest }) => {
   const {
