@@ -15,7 +15,7 @@ export const langs = {
     },
     actorPage: {
       bio: "Biografía",
-      mov: "Peliculas de",
+      mov: "Peliculas",
     },
     categoriePage: {
       mov: "Peliculas de",

@@ -44,3 +44,37 @@
         transform: rotate(360deg)
     }
 }
+
+.initialLoader {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;
+
+    img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        animation: intialLoader 1.4s linear infinite;
+    }
+}
+
+@keyframes intialLoader {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
