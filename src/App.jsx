@@ -3,7 +3,7 @@ import { ThemeContextProvider } from "./contexts/ThemeContext";
 import { GlobalStateContextProvider } from "./contexts/GlobalStateContext";
 
 import { HomePage } from "./pages/homePage";
-import { MoviePage } from "./pages/moviePage";
+import { MoviePage } from "./pages/moviePages";
 import { ActorPage } from "./pages/actorPage";
 import { CategoriesPage } from "./pages/categoriesPage";
 import { SearchedMoviesPage } from "./pages/searchedMoviesPage";
