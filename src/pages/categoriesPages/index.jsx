@@ -2,8 +2,8 @@ import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { useInfiniteMovies } from "../../hooks/useInfiniteMovies";
-import { MoviesResults } from "../../containers/MovieResults";
-import { Loading } from "../../components/Loadings";
+import { MoviesResults } from "../../containers/MovieResults/index";
+import { Loading } from "../../components/Loadings/index";
 import { langs } from "../../utils/languages";
 
 export const CategoriesPage = () => {
