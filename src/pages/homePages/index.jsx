@@ -1,7 +1,7 @@
 import React from "react";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { Categories } from "../../containers/Categories";
-import { LazyTopRated } from "../../containers/TopRateds";
+import { LazyTopRated } from "../../containers/TopRateds/index.jsx";
 import { LazyTrends } from "../../containers/Trendss";
 import { LazyUpComing } from "../../containers/UpComings";
 import { Footer } from "../../components/Footers";
