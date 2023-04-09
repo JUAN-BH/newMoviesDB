@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeContextProvider } from "./contexts/ThemeContext";
 import { GlobalStateContextProvider } from "./contexts/GlobalStateContext";
 
-import { HomePage } from "./pages/homePage";
+import { HomePage } from "./pages/homePages";
 import { MoviePage } from "../src/pages/MoviePage";
 import { ActorPage } from "../src/pages/ActorPage";
 import { CategoriesPage } from "../src/pages/CategoriesPage";
