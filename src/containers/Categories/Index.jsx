@@ -1,5 +1,5 @@
 import React from "react";
-import { CategoryItem } from "../../components/CategoryItem";
+import { CategoryItem } from "../../components/CategoryItems";
 import { langs } from "../../utils/languages";
 import { useCategories } from "../../hooks/useCategories";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";

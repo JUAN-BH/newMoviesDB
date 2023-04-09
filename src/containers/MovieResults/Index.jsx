@@ -1,5 +1,5 @@
 import React from "react";
-import { MovieItem } from "../../components/MovieItem";
+import { MovieItem } from "../../components/MovieItems";
 
 export const MoviesResults = ({ movies }) => {
   return (

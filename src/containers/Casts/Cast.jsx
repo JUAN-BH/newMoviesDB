@@ -1,8 +1,8 @@
 import React from "react";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { useMovieInfo } from "../../hooks/useMovieInfo";
-import { Gallery } from "../Gallery";
-import { ActorItem } from "../../components/ActorItem";
+import { Gallery } from "../Gallerys";
+import { ActorItem } from "../../components/ActorItems";
 import { langs } from "../../utils/languages";
 
 export const Cast = () => {

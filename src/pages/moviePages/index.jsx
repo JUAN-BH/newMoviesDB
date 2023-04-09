@@ -1,9 +1,9 @@
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
-import { MovieExtraInfo } from "../../containers/MovieExtraInfo";
-import { MovieInfo } from "../../containers/MovieInfo";
-import { BackButton } from "../../components/BackButton";
-import { Footer } from "../../components/Footer";
-import { Loading } from "../../components/Loading/Index";
+import { MovieExtraInfo } from "../../containers/MovieExtraInfos";
+import { MovieInfo } from "../../containers/MovieInfos";
+import { BackButton } from "../../components/BackButtons";
+import { Footer } from "../../components/Footers";
+import { Loading } from "../../components/Loadings";
 
 export const MoviePage = () => {
   const { state } = useGlobalStateContext();

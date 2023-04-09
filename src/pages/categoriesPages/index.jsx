@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { useInfiniteMovies } from "../../hooks/useInfiniteMovies";
 import { MoviesResults } from "../../containers/MovieResults";
-import { Loading } from "../../components/Loading/Index";
+import { Loading } from "../../components/Loadings";
 import { langs } from "../../utils/languages";
 
 export const CategoriesPage = () => {

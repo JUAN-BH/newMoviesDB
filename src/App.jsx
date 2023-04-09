@@ -10,7 +10,7 @@ import { SearchedMoviesPage } from "./pages/searchedMoviesPages";
 import { TopRatedMoviesPage } from "./pages/topRatedMoviesPages";
 import { TrendingMoviesPage } from "./pages/trendingMoviesPages";
 import { UpComingMoviesPage } from "./pages/upComingMoviesPages";
-import { LayoutHeader } from "./containers/LayoutHeader";
+import { LayoutHeader } from "./containers/LayOutHeaders";
 
 function App() {
   return (

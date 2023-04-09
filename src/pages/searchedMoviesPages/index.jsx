@@ -3,8 +3,8 @@ import { useSearchParams } from "react-router-dom";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { useInfiniteMovies } from "../../hooks/useInfiniteMovies";
 import { MoviesResults } from "../../containers/MovieResults";
-import { SearchMovieInput } from "../../components/SearchMovieInput";
-import { Loading } from "../../components/Loading/Index";
+import { SearchMovieInput } from "../../components/SearchMovieInputs";
+import { Loading } from "../../components/Loadings";
 import { langs } from "../../utils/languages";
 
 export const SearchedMoviesPage = () => {
