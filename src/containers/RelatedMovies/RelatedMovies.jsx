@@ -1,9 +1,9 @@
 import React from "react";
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
-import { Gallery } from "../Gallerys";
-import { MovieItem } from "../../components/MovieItems";
-import { langs } from "../../utils/languages";
 import { useMovieInfo } from "../../hooks/useMovieInfo";
+import { Gallery } from "../Gallery";
+import { MovieItem } from "../../components/MovieItem";
+import { langs } from "../../utils/languages";
 
 export const RelatedMovies = () => {
   const { state } = useGlobalStateContext();

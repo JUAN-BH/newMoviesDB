@@ -1,7 +1,7 @@
 import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
 import { useActorData } from "../../hooks/useActorData";
-import { Gallery } from "../Gallerys";
-import { MovieItem } from "../../components/MovieItems";
+import { Gallery } from "../Gallery";
+import { MovieItem } from "../../components/MovieItem";
 import { langs } from "../../utils/languages";
 
 export const ActorMovies = () => {
