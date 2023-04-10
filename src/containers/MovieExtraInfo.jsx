@@ -1,6 +1,6 @@
 import React from "react";
-import { LazyCast } from "./Castss";
-import { LazyMovieTrailer } from "./MovieTrailers";
+import { LazyCast } from "./Cast";
+import { LazyMovieTrailer } from "./MovieTrailer";
 import { LazyRelatedMovies } from "./RelatedMovies";
 
 export const MovieExtraInfo = () => {

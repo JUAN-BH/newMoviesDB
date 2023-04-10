@@ -1,10 +1,11 @@
-import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
-import { useMovieInfo } from "../../hooks/useMovieInfo";
-import { Gallery } from "../Gallery";
-import { ActorItem } from "../../components/ActorItem";
-import { langs } from "../../utils/languages";
+import { useGlobalStateContext } from "../contexts/GlobalStateContext";
+import { useMovieInfo } from "../hooks/useMovieInfo";
+import { useNearScreen } from "../hooks/useNearScreen";
+import { Gallery } from "./Gallery";
+import { ActorItem } from "../components/ActorItem";
+import { langs } from "../utils/languages";
 
-export const Cast = () => {
+const Cast = () => {
   const { state } = useGlobalStateContext();
   const { movieData } = useMovieInfo("/credits");
 
@@ -28,4 +29,9 @@ export const Cast = () => {
       )}
     </div>
   );
+};
+
+export const LazyCast = () => {
+  const { show, elRef } = useNearScreen();
+  return <div ref={elRef}>{show && <Cast />} </div>;
 };

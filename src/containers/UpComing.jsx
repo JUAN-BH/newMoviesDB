@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
-import { useDisplayMovies } from "../../hooks/useDisplayMovies";
-import { Gallery } from "../Gallery";
-import { Loading } from "../../components/Loading";
-import { MovieItem } from "../../components/MovieItem";
-import { langs } from "../../utils/languages";
+import { useGlobalStateContext } from "../contexts/GlobalStateContext";
+import { useDisplayMovies } from "../hooks/useDisplayMovies";
+import { useNearScreen } from "../hooks/useNearScreen";
+import { Gallery } from "./Gallery";
+import { Loading } from "../components/Loading";
+import { MovieItem } from "../components/MovieItem";
+import { langs } from "../utils/languages";
 
-export const UpComing = () => {
+const UpComing = () => {
   const upComingMovies = useDisplayMovies("movie/upcoming");
   const { state } = useGlobalStateContext();
   const lang = state.lang;
@@ -33,5 +34,15 @@ export const UpComing = () => {
         )}
       </Gallery>
     </>
+  );
+};
+
+export const LazyUpComing = () => {
+  const { show, elRef } = useNearScreen();
+
+  return (
+    <section className="upComing moviesDisplay" ref={elRef}>
+      {show && <UpComing />}
+    </section>
   );
 };

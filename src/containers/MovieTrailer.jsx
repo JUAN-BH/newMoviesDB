@@ -1,7 +1,8 @@
 import React from "react";
-import { useMovieInfo } from "../../hooks/useMovieInfo";
+import { useMovieInfo } from "../hooks/useMovieInfo";
+import { useNearScreen } from "../hooks/useNearScreen";
 
-export const MovieTrailer = () => {
+const MovieTrailer = () => {
   const { movieData } = useMovieInfo("/videos");
 
   if (!movieData?.results?.length > 0) {
@@ -20,4 +21,10 @@ export const MovieTrailer = () => {
       ></iframe>
     </div>
   );
+};
+
+export const LazyMovieTrailer = () => {
+  const { show, elRef } = useNearScreen();
+
+  return <div ref={elRef}>{show && <MovieTrailer />}</div>;
 };

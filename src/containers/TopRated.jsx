@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
-import { useDisplayMovies } from "../../hooks/useDisplayMovies";
-import { Gallery } from "../Gallery";
-import { Loading } from "../../components/Loading";
-import { MovieItem } from "../../components/MovieItem";
-import { langs } from "../../utils/languages";
+import { useGlobalStateContext } from "../contexts/GlobalStateContext";
+import { useDisplayMovies } from "../hooks/useDisplayMovies";
+import { useNearScreen } from "../hooks/useNearScreen";
+import { Gallery } from "./Gallery";
+import { Loading } from "../components/Loading";
+import { MovieItem } from "../components/MovieItem";
+import { langs } from "../utils/languages";
 
-export const TopRated = () => {
+const TopRated = () => {
   const topRatedMovies = useDisplayMovies("movie/top_rated");
   const { state } = useGlobalStateContext();
   const lang = state.lang;
@@ -33,5 +34,15 @@ export const TopRated = () => {
         )}
       </Gallery>
     </>
+  );
+};
+
+export const LazyTopRated = () => {
+  const { show, elRef } = useNearScreen();
+
+  return (
+    <section className="topRated moviesDisplay" ref={elRef}>
+      {show && <TopRated />}
+    </section>
   );
 };

@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
-import { useDisplayMovies } from "../../hooks/useDisplayMovies";
-import { Gallery } from "../Gallery";
-import { Loading } from "../../components/Loading";
-import { MovieItem } from "../../components/MovieItem";
-import { langs } from "../../utils/languages";
+import { useGlobalStateContext } from "../contexts/GlobalStateContext";
+import { useDisplayMovies } from "../hooks/useDisplayMovies";
+import { useNearScreen } from "../hooks/useNearScreen";
+import { Gallery } from "./Gallery";
+import { Loading } from "../components/Loading";
+import { MovieItem } from "../components/MovieItem";
+import { langs } from "../utils/languages";
 
-export const Trends = () => {
+const Trends = () => {
   const trendMovies = useDisplayMovies("trending/movie/day");
 
   const { state } = useGlobalStateContext();
@@ -34,5 +35,15 @@ export const Trends = () => {
         )}
       </Gallery>
     </>
+  );
+};
+
+export const LazyTrends = () => {
+  const { show, elRef } = useNearScreen();
+
+  return (
+    <section className="trends moviesDisplay" ref={elRef}>
+      {show && <Trends />}
+    </section>
   );
 };

@@ -1,11 +1,12 @@
 import React from "react";
-import { useGlobalStateContext } from "../../contexts/GlobalStateContext";
-import { useMovieInfo } from "../../hooks/useMovieInfo";
-import { Gallery } from "../Gallery";
-import { MovieItem } from "../../components/MovieItem";
-import { langs } from "../../utils/languages";
+import { useGlobalStateContext } from "../contexts/GlobalStateContext";
+import { useMovieInfo } from "../hooks/useMovieInfo";
+import { useNearScreen } from "../hooks/useNearScreen";
+import { Gallery } from "./Gallery";
+import { MovieItem } from "../components/MovieItem";
+import { langs } from "../utils/languages";
 
-export const RelatedMovies = () => {
+const RelatedMovies = () => {
   const { state } = useGlobalStateContext();
   const { movieData } = useMovieInfo("/recommendations");
 
@@ -28,4 +29,9 @@ export const RelatedMovies = () => {
       )}
     </div>
   );
+};
+
+export const LazyRelatedMovies = () => {
+  const { show, elRef } = useNearScreen();
+  return <div ref={elRef}>{show && <RelatedMovies />}</div>;
 };
