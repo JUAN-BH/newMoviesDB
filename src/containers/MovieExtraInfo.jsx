@@ -1,7 +1,7 @@
 import React from "react";
-import { LazyCast } from "./Castss/Index";
-import { LazyMovieTrailer } from "./MovieTrailers/Index";
-import { LazyRelatedMovies } from "./RelatedMovies/Index";
+import { LazyCast } from "./Castss";
+import { LazyMovieTrailer } from "./MovieTrailers";
+import { LazyRelatedMovies } from "./RelatedMovies";
 
 export const MovieExtraInfo = () => {
   return (
