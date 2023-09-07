@@ -1,3 +1,4 @@
+import { SwiperSlide } from "swiper/react";
 import { useGlobalStateContext } from "../contexts/GlobalStateContext";
 import { useMovieInfo } from "../hooks/useMovieInfo";
 import { useNearScreen } from "../hooks/useNearScreen";
@@ -23,7 +24,11 @@ const Cast = () => {
       {movieData?.cast && (
         <Gallery>
           {movieData.cast.map((a) => {
-            return <ActorItem actor={a} key={a.id} />;
+                        return (
+                          <SwiperSlide>
+                            <ActorItem actor={a} key={a.id} />
+                          </SwiperSlide>
+                          );
           })}
         </Gallery>
       )}

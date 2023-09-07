@@ -1,27 +1,36 @@
 .moviesResults {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 19px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    gap: 10px;
     max-width: 115rem;
     min-height: 100vh;
     margin: auto 0;
 
     .movieItem {
-        max-width: 158px;
-        max-height: 240px;
+        place-self: center;
     }
 }
 
-@include media-up(lg) {
+@media screen and (min-width: 514px) {
     .moviesResults {
-        gap: 0px;
-        justify-content: inherit;
-
-        .movieItem {
-            max-width: 180px;
-            max-height: 264px;
-        }
+        grid-template-columns: repeat(3, 1fr);
     }
-
+}
+@media screen and (min-width: 720px) {
+    .moviesResults {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (min-width: 900px) {
+    .moviesResults {
+        // column-gap: 0px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media screen and (min-width: 1000px) {
+    .moviesResults {
+        // column-gap: 10px;
+        grid-template-columns: repeat(6, 1fr);
+    }
 }

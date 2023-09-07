@@ -1,4 +1,5 @@
 import React from "react";
+import { SwiperSlide } from "swiper/react";
 import { NavLink } from "react-router-dom";
 import { useGlobalStateContext } from "../contexts/GlobalStateContext";
 import { useDisplayMovies } from "../hooks/useDisplayMovies";
@@ -28,7 +29,11 @@ const Trends = () => {
       <Gallery>
         {trendMovies.length > 0 ? (
           trendMovies.map((m) => {
-            return <MovieItem movie={m} key={m.id} />;
+            return (
+              <SwiperSlide>
+                <MovieItem movie={m} key={m.id} />
+              </SwiperSlide>
+              );
           })
         ) : (
           <Loading />
