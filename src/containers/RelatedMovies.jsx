@@ -1,4 +1,5 @@
 import React from "react";
+import { SwiperSlide } from "swiper/react";
 import { useGlobalStateContext } from "../contexts/GlobalStateContext";
 import { useMovieInfo } from "../hooks/useMovieInfo";
 import { useNearScreen } from "../hooks/useNearScreen";
@@ -23,7 +24,11 @@ const RelatedMovies = () => {
       {movieData?.results && (
         <Gallery>
           {movieData.results.map((m) => {
-            return <MovieItem movie={m} key={m.id} />;
+                        return (
+                          <SwiperSlide>
+                            <MovieItem movie={m} key={m.id} />
+                          </SwiperSlide>
+                          );
           })}
         </Gallery>
       )}

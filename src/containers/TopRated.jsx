@@ -1,4 +1,5 @@
 import React from "react";
+import { SwiperSlide } from "swiper/react";
 import { NavLink } from "react-router-dom";
 import { useGlobalStateContext } from "../contexts/GlobalStateContext";
 import { useDisplayMovies } from "../hooks/useDisplayMovies";
@@ -27,7 +28,11 @@ const TopRated = () => {
       <Gallery>
         {topRatedMovies.length > 0 ? (
           topRatedMovies.map((m) => {
-            return <MovieItem movie={m} key={m.id} />;
+            return (
+              <SwiperSlide>
+                <MovieItem movie={m} key={m.id} />
+              </SwiperSlide>
+              );
           })
         ) : (
           <Loading />
