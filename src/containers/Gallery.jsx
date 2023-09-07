@@ -10,8 +10,6 @@ export const Gallery = ({ children }) => {
     <Swiper
       modules={[Navigation, A11y]}      
       navigation
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
       spaceBetween={10}
       slidesPerView={1}
       autoplay={true}

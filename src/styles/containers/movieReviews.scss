@@ -1,0 +1,57 @@
+.movieReviews{
+    max-width: 115rem;
+    padding: 12px;
+    margin: 0 auto;
+    
+    .MReview{
+        width: 100%;
+        // max-width: 800px;
+        margin: 20px auto;
+        padding: 14px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,.1);
+        //DRK  0 2px 8px rgb(224 214 214 / 10%)
+        &__introInfo{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            figure{
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            figure img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
+
+            div{
+                p:first-child{
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 1.4rem;
+                    line-height: 18px;
+                    font-weight: lighter;
+                }
+            }
+        }
+
+        &__review{
+            margin-top: 12px;
+            padding-inline: 12px;
+            p {
+                text-align: justify;
+                span{
+                    cursor: pointer;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
