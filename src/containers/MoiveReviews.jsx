@@ -4,9 +4,14 @@ import { useMovieInfo } from "../hooks/useMovieInfo"
 export const MovieReviews = () => {
     const {movieData} = useMovieInfo('/reviews');
     const arrData = movieData?.results;
+
+    if(!arrData?.length > 0){
+        return null;
+    }
+
     return(
         <section className="movieReviews">
-            <h1>Movie Reviews</h1>
+            <h2>Movie Reviews</h2>
             <div>
                 {
                     arrData?.map((item) => {

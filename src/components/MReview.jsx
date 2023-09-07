@@ -11,8 +11,11 @@ export const MReview = ({ info }) => {
     <article className="MReview">
         <div className="MReview__introInfo">
             <figure>
-                <img src={`https://image.tmdb.org/t/p/original/${info.author_details.avatar_path}`} alt="user" />
-            </figure>
+                {info.author_details.avatar_path ? 
+                    (<img src={`https://image.tmdb.org/t/p/original/${info.author_details.avatar_path}`} alt="user" />) :
+                    ( <p>{info.author.split(" ")[0].charAt(0)}</p> )
+                }
+            </figure>   
             <div>
                 <p>A review by {info.author}</p>
                 <p>Written on {info.created_at.split("T")[0]}</p>
