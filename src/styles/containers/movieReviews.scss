@@ -2,15 +2,20 @@
     max-width: 115rem;
     padding: 12px;
     margin: 0 auto;
+
+    .swiper-slide{
+        padding-inline: 20px;
+        padding-bottom: 20px;
+    }
     
     .MReview{
         width: 100%;
-        // max-width: 800px;
         margin: 20px auto;
         padding: 14px;
         border-radius: 8px;
+        background-color: white;
         box-shadow: 0 2px 8px rgba(0,0,0,.1);
-        //DRK  0 2px 8px rgb(224 214 214 / 10%)
+        cursor: grab;
         &__introInfo{
             display: flex;
             align-items: center;
