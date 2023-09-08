@@ -4,6 +4,7 @@ import { MovieInfo } from "../containers/MovieInfo";
 import { BackButton } from "../components/BackButton";
 import { Footer } from "../components/Footer";
 import { Loading } from "../components/Loading";
+import { MovieReviews } from "../containers/MoiveReviews";
 
 export const MoviePage = () => {
   const { state } = useGlobalStateContext();
@@ -13,6 +14,7 @@ export const MoviePage = () => {
       <BackButton />
       <MovieInfo />
       <MovieExtraInfo />
+      <MovieReviews />
       <Footer />
     </div>
   );

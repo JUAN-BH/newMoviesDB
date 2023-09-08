@@ -12,6 +12,11 @@ export const langs = {
       date: "Fecha de estreno",
       cast: "Elenco",
       rel: "Peliculas similares",
+      mr: "Reseñas",
+      readM: "Leer mas",
+      readL: "Leer menos",
+      wBy: "Escrito por",
+      wOn: "Escrito en",
     },
     actorPage: {
       bio: "Biografía",

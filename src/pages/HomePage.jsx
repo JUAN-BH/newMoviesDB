@@ -16,7 +16,7 @@ export const HomePage = () => {
       {state.initialLoader && <InitialLoader />}
       <SearchMovieInput />
       <Categories />
-      <LazyUpComing />
+      {/* <LazyUpComing /> */}
       <LazyTrends />
       <LazyTopRated />
       <Footer />
